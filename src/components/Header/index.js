@@ -24,9 +24,17 @@ export default class Header extends Component {
                         <li><a href = '#experience'>Experience</a></li>
                         <li><a href = '#works' >Works</a></li>
                         <li><a href = '#contacts' >Contacts</a></li>
-                        <li><a href = '#footer' >Footer</a></li>
+                    </ul>
+                    <ul className = { Styles.menuToggle } >
+                        <button className = { Styles.navbarToggle } ></button>
+                        <li><a href = '#home' >Home</a></li>
+                        <li><a href = '#skills' >Skills</a></li>
+                        <li><a href = '#experience'>Experience</a></li>
+                        <li><a href = '#works' >Works</a></li>
+                        <li><a href = '#contacts' >Contacts</a></li>
                     </ul>
                 </div>
+
             </section>
         );
     }

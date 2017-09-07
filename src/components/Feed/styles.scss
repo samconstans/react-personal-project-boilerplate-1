@@ -1,5 +1,7 @@
 @import '../../theme/palette';
 
 .feed {
-
+  max-width: 100%;
+  overflow: hidden;
+  clear: both;
 }
