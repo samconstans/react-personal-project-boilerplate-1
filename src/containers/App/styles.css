@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #E9EBEE; }
+  .app img {
+    width: 100px;
+    height: 100px; }
+  .app h1 {
+    font-size: 50px; }
+  .app h1, .app p {
+    margin: auto;
+    color: #808080; }
+
+/*# sourceMappingURL=styles.css.map */

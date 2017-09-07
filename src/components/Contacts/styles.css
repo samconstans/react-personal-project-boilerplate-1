@@ -1,0 +1,9 @@
+.skills {
+  background: #eee;
+  height: 100%;
+  display: flex;
+  color: #a7b3cb; }
+  .skills div li {
+    list-style: none; }
+
+/*# sourceMappingURL=styles.css.map */

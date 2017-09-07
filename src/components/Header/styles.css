@@ -1,0 +1,25 @@
+.topBar {
+  display: flex;
+  flex-direction: row;
+  max-width: 960px;
+  background: #101010;
+  height: 50px; }
+  .topBar img {
+    width: 150px;
+    height: 50px;
+    margin-left: 50px; }
+
+.links {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 45%; }
+  .links li {
+    list-style: none;
+    padding: 5px;
+    background: #101010; }
+  .links a {
+    color: #9d9d9d; }
+  .links li::active {
+    background: #080808; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,32 @@
+@import '../../theme/palette';
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: $paletteColor2;
+  font-family: 'roboto medium', Helvetica;
+
+  a {
+    display: block;
+    width: 300px;
+    height: 35px;
+    color: $paletteColor2;
+    text-align: center;
+    background: $paletteColor5;
+    outline: none;
+    text-decoration: none;
+    margin: 20px;
+    padding-top: 13px;
+    border-radius: 5px;
+
+    &:hover {
+      outline: none;
+      background: $paletteColor4;
+      -webkit-box-shadow: 3px 3px 5px 0px rgba(79,90,110,1);
+      -moz-box-shadow: 3px 3px 5px 0px rgba(79,90,110,1);
+      box-shadow: 3px 3px 5px 0px rgba(79,90,110,1);
+      transition-duration: .2s;
+    }
+  }
+}

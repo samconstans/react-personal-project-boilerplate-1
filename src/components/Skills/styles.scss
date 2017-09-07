@@ -1,0 +1,50 @@
+@import '../../theme/palette';
+
+.skills {
+  background: $paletteColor2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: $paletteColor6;
+  box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,1);
+
+  h1 {
+    width: 50%;
+    display: block;
+    font-family: 'roboto_condensedlight', sans-serif;
+    letter-spacing: 0.15em;
+    font-size: 45px;
+    color: $paletteColor5;
+    text-align: left;
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    padding: 25px 10px 3px 25px;
+    text-transform: capitalize;
+    border-bottom: 2px solid $paletteColor5;
+    margin-left: 25px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: left;
+    margin-bottom: 25px;
+
+    .right {
+      width: 25%;
+    }
+
+    .left {
+      width: 60%;
+    }
+
+    li {
+      list-style: none;
+      font-family: roboto_condensedregular, Helvetica;
+      font-size: 18px;
+      color: $paletteColor3;
+      line-height: 1.5;
+    }
+  }
+}
+

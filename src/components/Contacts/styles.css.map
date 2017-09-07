@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,OAAQ;EACN,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,KAAK,EAAE,OAAO;EAEd,cAAO;IACL,UAAU,EAAE,IAAI",
+"sources": ["../../../../../../%D0%90%D0%BD%D0%B0%D1%81%D1%82%D0%B0%D1%81%D0%B8%D1%8F/Documents/react-personal-project-boilerplate-master/src/components/Contacts/styles.scss"],
+"names": [],
+"file": "styles.css"
+}

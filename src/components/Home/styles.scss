@@ -1,0 +1,68 @@
+@import '../../theme/palette';
+
+.home {
+  display: flex;
+  background: url('../../theme/assets/panorama.jpg') center 80%;
+  flex-direction: row;
+  background-size: cover;
+  transition: 0.5s ease all;
+  flex-wrap: wrap;
+  box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,1);
+
+  &.blurred {
+    filter: blur(2px);
+  }
+
+  .profil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 100px 50px 100px 10px;
+    text-align: center;
+    border: 5px solid $paletteColor5;
+  }
+
+   h1 {
+     font-family: 'roboto_condensedlight', sans-serif;
+     letter-spacing: 0.15em;
+     font-size: 45px;
+     color: $paletteColor2;
+     text-align: center;
+     text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+     padding: 125px 10px 2px 1px;
+
+     span {
+       color: $paletteColor5;
+       text-transform: capitalize;
+     }
+   }
+
+  h2 {
+    display: inline-block;
+    width: 650px;
+    font-family: 'roboto_condensedregular', Helvetica;
+    color: $paletteColor2;
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+  }
+
+ a {
+   display: block;
+    margin: 20px;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    color: $paletteColor2;
+    text-align: center;
+    background: $paletteColor5;
+    outline: none;
+
+    &:hover {
+      outline: none;
+      background: $paletteColor4;
+      color: $paletteColor6;
+    }
+  }
+
+}
