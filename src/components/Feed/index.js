@@ -24,15 +24,9 @@ export default class Feed extends Component {
         repos:               []
     };
 
-    /*componentWillUnmount () {
-        clearInterval(this.timer);
-    }*/
-
     componentWillMount () {
         this.getDataPerson();
         this.getDataRepo();
-
-        /*this.timer = setInterval(() => this.getDataPerson(), 5000); // обновление данніх раз в сутки*/
     }
 
     getDataPerson = () => {

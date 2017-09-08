@@ -14,23 +14,6 @@ export default class Header extends Component {
             logo
         } = this.context;
 
-        /*//header scroll stuff
-       window.onscroll = function(e) {
-           var nav = document.getElementsByClassName("header")[0],
-               banner = document.getElementsByClassName("big-banner")[0], у меня нет такого класса ,я заливку сделала в css
-               range = 70,
-               scrollTop = document.body.scrollTop;
-
-           if (scrollTop > range) {
-               nav.classList.add("scrollNav");
-               banner.classList.add("blurred");
-           }
-           else {
-               nav.classList.remove("scrollNav");
-               banner.classList.remove("blurred");
-           }
-       };*/
-
         return (
             <section className = { Styles.header } >
                 <div className = { Styles.topBarLeft } >
@@ -42,7 +25,6 @@ export default class Header extends Component {
                         <li><a href = '#works' >Works</a></li>
                         <li><a href = '#contacts' >Contacts</a></li>
                     </ul>
-                    {/*{ toogle }*/}
                 </div>
 
             </section>

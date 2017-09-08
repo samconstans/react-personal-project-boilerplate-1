@@ -7,7 +7,7 @@ export default class Skills extends Component {
         return (
             <section className = { Styles.skills } id = 'skills'>
                 <h1>Technical Skills</h1>
-                <div className={Styles.list}>
+                <div className = { Styles.list }>
                     <ul>
                         <li>Technologies:</li>
                         <li>HTML, CSS, Flexbox, SASS, Adaptive design</li>
@@ -22,7 +22,7 @@ export default class Skills extends Component {
                     </ul>
                     <ul>
                         <li>Frameworks / Libraries:</li>
-                        <li>jQuery, React.js, Angular 2 on basic level</li>
+                        <li>React.js, Angular 2 on basic level, jQuery </li>
                     </ul>
                     <ul>
                         <li>Version Control Systems:</li>
@@ -30,7 +30,7 @@ export default class Skills extends Component {
                     </ul>
                     <ul>
                         <li>Programming languages:</li>
-                        <li>Javascript, ES2015-ES 2017</li>
+                        <li>Javascript, ES2015-ES2017</li>
                     </ul>
                     <ul>
                         <li>Build tools:</li>
