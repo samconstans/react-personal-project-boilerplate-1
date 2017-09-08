@@ -7,7 +7,8 @@
   max-width: 100%;
   transition: all 0.5s ease;
   background: none;
-  opacity: 0.92;
+  z-index: 5000;
+  opacity: 1;
   justify-content: space-between;
 
   .topBarLeft {
@@ -58,9 +59,16 @@
     display: none;
   }
 
-  .menuToggle {
-    display: none;
-    content: ' ';
+  .scrollNav {
+    background: $paletteColor2;
+    opacity: 0.92;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-bottom: 1px solid rgba(200, 200, 200, 0.8);
+
+    & .menu li a {
+      color: #555;
+    }
   }
 }
 

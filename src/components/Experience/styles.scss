@@ -10,7 +10,6 @@
 
   h1 {
     width: 50%;
-
     display: inline-block;
     font-family: 'roboto_condensedlight', sans-serif;
     letter-spacing: 0.15em;
@@ -37,18 +36,18 @@
 
       li {
         list-style: none;
-        font-family: roboto_condensedregular, Helvetica;
+        font-family: 'roboto medium', Helvetica;
         font-size: 18px;
         color: $paletteColor3;
         line-height: 1.5;
 
         &:first-child {
           text-align: left;
-          width: 30%;
+          width: 25%;
         }
 
         &:last-child {
-          width: 70%;
+          width: 65%;
         }
 
         .listOil {
@@ -58,6 +57,112 @@
           li {
             text-align: left;
             width: 95%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .experience {
+    min-width: 768px;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .experience {
+    min-width: 480px;
+
+    h1 {
+      font-size: 25px;
+      padding: 0 10px 3px 0;
+      text-transform: capitalize;
+      border-bottom: 2px solid #1A9696;
+      margin-left: 35px;
+    }
+
+    .list {
+       display: flex;
+       flex-wrap: nowrap;
+       flex-direction: column;
+       text-align: left;
+       margin: 0;
+
+      ul {
+         display: flex;
+         flex-direction: column;
+         margin: 0;
+
+         li {
+           font-size: 18px;
+
+
+           &:first-child {
+             text-align: left;
+             width: 90%;
+           }
+
+           &:last-child {
+             width: 95%;
+           }
+
+           .listOil {
+             display: flex;
+             flex-direction: column;
+
+             li {
+               text-align: left;
+               width: 95%;
+             }
+           }
+         }
+       }
+     }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .experience {
+    min-width: 480px;
+
+    h1 {
+      font-size: 25px;
+    }
+
+    .list {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      text-align: left;
+      margin-bottom: 0;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          font-size: 18px;
+
+
+          &:first-child {
+            text-align: left;
+            width: 90%;
+          }
+
+          &:last-child {
+            width: 90%;
+          }
+
+          .listOil {
+            display: flex;
+            flex-direction: column;
+
+            li {
+              text-align: left;
+              width: 95%;
+            }
           }
         }
       }

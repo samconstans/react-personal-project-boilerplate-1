@@ -8,30 +8,38 @@ export default class Skills extends Component {
             <section className = { Styles.skills } id = 'skills'>
                 <h1>Technical Skills</h1>
                 <div className={Styles.list}>
-                    <div className={Styles.right}>
-                        <ul>
-                            <li>Technologies:</li>
-                            <li>Related technologies:</li>
-                            <li>Methodology:</li>
-                            <li>Frameworks/Libraries:</li>
-                            <li>Version Control Systems:</li>
-                            <li>Programming languages:</li>
-                            <li>Build tools:</li>
-                            <li>Extras:</li>
-                        </ul>
-                    </div>
-                    <div className={Styles.left}>
-                        <ul>
-                            <li>HTML, CSS, Flexbox, SASS, Adaptive design</li>
-                            <li>Basics of Photoshop for coder, graphic optimization, retina support</li>
-                            <li>BEM</li>
-                            <li>jQuery, React.js, Angular 2 on basic level</li>
-                            <li>GIT</li>
-                            <li>Javascript, ES2015-ES 2017</li>
-                            <li>Gulp,  webpack</li>
-                            <li>Command line on basic level, NPM, Yarn, VIM, Chrome dev tools</li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li>Technologies:</li>
+                        <li>HTML, CSS, Flexbox, SASS, Adaptive design</li>
+                    </ul>
+                    <ul>
+                        <li>Related technologies:</li>
+                        <li>Basics of Photoshop for coder, graphic optimization, retina support</li>
+                    </ul>
+                    <ul>
+                        <li>Methodology:</li>
+                        <li>BEM</li>
+                    </ul>
+                    <ul>
+                        <li>Frameworks / Libraries:</li>
+                        <li>jQuery, React.js, Angular 2 on basic level</li>
+                    </ul>
+                    <ul>
+                        <li>Version Control Systems:</li>
+                        <li>GIT</li>
+                    </ul>
+                    <ul>
+                        <li>Programming languages:</li>
+                        <li>Javascript, ES2015-ES 2017</li>
+                    </ul>
+                    <ul>
+                        <li>Build tools:</li>
+                        <li>Gulp,  webpack</li>
+                    </ul>
+                    <ul>
+                        <li>Extras:</li>
+                        <li>Command line on basic level, NPM, Yarn, VIM, Chrome dev tools</li>
+                    </ul>
                 </div>
             </section>
         );

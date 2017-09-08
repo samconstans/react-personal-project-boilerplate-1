@@ -10,7 +10,7 @@
   h1 {
     width: 50%;
     display: block;
-    font-family: 'roboto_condensedlight', sans-serif;
+    font-family: 'roboto medium', sans-serif;
     letter-spacing: 0.15em;
     font-size: 45px;
     color: $paletteColor5;
@@ -25,24 +25,108 @@
   .list {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
+    flex-direction: column;
     text-align: left;
     margin-bottom: 25px;
 
-    .right {
-      width: 25%;
+    ul {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        list-style: none;
+        font-family: 'roboto medium', Helvetica;
+        font-size: 18px;
+        color: $paletteColor3;
+        line-height: 1.5;
+        letter-spacing: normal;
+
+        &:first-child {
+          text-align: left;
+          width: 25%;
+        }
+
+        &:last-child {
+          width: 65%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .skills {
+    min-width: 768px;
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .skills {
+    min-width: 480px;
+
+    h1 {
+      font-size: 25px;
     }
 
-    .left {
-      width: 60%;
+    .list {
+      flex-direction: column;
+      text-align: left;
+      margin: 0;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+
+        li {
+
+          &:first-child {
+            text-align: left;
+            width: 25%;
+          }
+
+          &:last-child {
+            width: 65%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .skills {
+    min-width: 480px;
+
+    h1 {
+      font-size: 25px;
     }
 
-    li {
-      list-style: none;
-      font-family: roboto_condensedregular, Helvetica;
-      font-size: 18px;
-      color: $paletteColor3;
-      line-height: 1.5;
+    .list {
+      flex-direction: column;
+      text-align: left;
+      margin: 0;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+
+        li {
+          font-size: 18px;
+
+          &:first-child {
+            text-align: left;
+            width: 90%;
+
+          }
+
+          &:last-child {
+            width: 90%;
+          }
+        }
+      }
     }
   }
 }

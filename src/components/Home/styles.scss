@@ -12,7 +12,7 @@
     filter: blur(2px);
   }
 
-  .profil {
+  img {
     width: 250px;
     height: 250px;
     border-radius: 50%;
@@ -22,13 +22,13 @@
   }
 
    h1 {
-     font-family: 'roboto_condensedlight', sans-serif;
+     font-family: 'roboto medium', sans-serif;
      letter-spacing: 0.15em;
      font-size: 45px;
      color: $paletteColor2;
      text-align: center;
      text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-     padding: 125px 10px 2px 1px;
+     margin-top: 125px;
 
      span {
        color: $paletteColor5;
@@ -39,49 +39,18 @@
   h2 {
     display: inline-block;
     width: 650px;
-    font-family: 'roboto_condensedregular', Helvetica;
+    font-family: 'roboto medium', Helvetica;
     color: $paletteColor2;
     font-size: 25px;
     font-weight: lighter;
     letter-spacing: 0.1em;
   }
-
- a {
-   display: block;
-    margin: 20px;
-    border-radius: 5px;
-    width: 200px;
-    height: 40px;
-    color: $paletteColor2;
-    text-align: center;
-    background: $paletteColor5;
-    outline: none;
-
-    &:hover {
-      outline: none;
-      background: $paletteColor4;
-      color: $paletteColor6;
-    }
-  }
-
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
   .home {
     min-width: 768px;
-
-    img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      margin: 100px 50px 100px 10px;
-      text-align: center;
-      border: 5px solid #1A9696;
-    }
   }
-
-
-
 }
 
 
@@ -92,20 +61,47 @@
     img {
       width: 150px;
       height: 150px;
-      border-radius: 50%;
-      margin: 100px 50px 100px 10px;
-      text-align: center;
-      border: 5px solid #1A9696;
     }
 
+    .blockText {
+      width: 64%;
+      h1 {
+        font-size: 25px;
+      }
 
-
+      h2 {
+        font-size: 15px;
+      }
+    }
   }
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
   .home {
     min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    img {
+      width: 150px;
+      height: 150px;
+      margin: 127px auto;
+      margin-bottom: -110px;
+    }
+
+    .blockText {
+      width: 100%;
+
+
+      h1 {
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 15px;
+      }
+    }
 
 
   }
