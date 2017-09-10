@@ -14,7 +14,9 @@ export default class Feed extends Component {
     static contextTypes = {
         api:     PropTypes.string.isRequired,
         apirepo: PropTypes.string.isRequired,
-        logo:    PropTypes.string.isRequired
+        linkedin: PropTypes.string.isRequired,
+        logo:    PropTypes.string.isRequired,
+        twitter: PropTypes.string.isRequired
     };
 
     state = {

@@ -14,7 +14,7 @@ export default class Works extends Component {
         const reposList = repos.map(({ id, name, html_url, language }) =>
             <li key = { id }>
                 <a href = { html_url } target = '_blank'> { name } </a>
-                <span>{language ? language : 'HTML'}</span>
+                <span>{language ? language : 'HTML' }</span>
             </li>
         );
 

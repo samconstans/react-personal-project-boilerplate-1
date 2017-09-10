@@ -4,7 +4,7 @@ import Home from './';
 import Feed from '../../components/Feed';
 import { options } from '../../containers/App';
 
-const { firstName,lastName, avatar } = options;
+const { firstName, lastName, avatar } = options;
 
 const result = shallow(<Home getDataRepo = {new Feed().getDataRepo} />,
     {
