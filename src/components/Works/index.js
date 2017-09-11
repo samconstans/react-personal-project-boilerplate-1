@@ -11,9 +11,9 @@ export default class Works extends Component {
     render () {
         const { repos } = this.props;
 
-        const reposList = repos.map(({ id, name, html_url, language }) =>
+        const reposList = repos.map(({ id, name, html_url, language }) => //eslint-disable-line
             <li key = { id }>
-                <a href = { html_url } target = '_blank'> { name } </a>
+                <a href = { html_url } target = '_blank'> { name } </a> {/*//eslint-disable-line*/}
                 <span>{language ? language : 'HTML' }</span>
             </li>
         );

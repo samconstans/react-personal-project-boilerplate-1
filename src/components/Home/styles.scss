@@ -7,6 +7,7 @@
   background-size: cover;
   transition: 0.5s ease all;
   flex-wrap: wrap;
+  overflow: hidden;
 
   &.blurred {
     filter: blur(2px);

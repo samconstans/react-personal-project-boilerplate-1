@@ -6,7 +6,23 @@
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
-  font-family: 'roboto medium', Helvetica ,serif;
-  overflow: hidden;
-  clear: both;
+  font-family: 'roboto medium', Helvetica, serif;
+
+  .listEnter {
+    opacity: .01;
+  }
+
+  .listEnterActive {
+    transition: opacity 1000ms ease-in;
+    opacity: 1;
+  }
+
+  .listExit {
+    opacity: 1;
+  }
+
+  .listExitActive {
+    transition: opacity 4000ms ease-in;
+    opacity: .01;
+  }
 }
