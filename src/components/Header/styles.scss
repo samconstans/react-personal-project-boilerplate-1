@@ -8,11 +8,19 @@
   margin-left: -9px;
   justify-content: space-around;
 
+  img {
+    margin-top: 10px;
+    width: 150px;
+    height: 35px;
+    margin-left: 50px;
+  }
+
   .topBarLeft {
     display: flex;
     justify-content: space-between;
     position: fixed;
     width: 100%;
+    height: 11%;
     transition: all 0.5s ease;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     background: $paletteColor9;
@@ -47,27 +55,9 @@
     }
   }
 
-  img {
-    margin-top: 10px;
-    width: 150px;
-    height: 35px;
-    margin-left: 50px;
-  }
-  .navbarToggle {
-    display: none;
-  }
-
-  .scrollNav {
-    background: $paletteColor2;
-    opacity: 0.92;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    border-bottom: 1px solid rgba(200, 200, 200, 0.8);
-
     & .menu li a {
       color: #555;
     }
-  }
 }
 
 

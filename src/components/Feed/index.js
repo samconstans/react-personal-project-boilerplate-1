@@ -45,6 +45,7 @@ export default class Feed extends Component {
                     throw new Error('Post was not loaded.');
                 }
 
+
                 return result.json();
             })
 
