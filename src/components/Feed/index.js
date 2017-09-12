@@ -79,7 +79,14 @@ export default class Feed extends Component {
 
     };
 
+
     // Transitions
+
+    handleComponentSwitch (component ) {
+        this.setState({
+            page: component
+        })
+    };
 
     handleSkillsAppear = () => {
         const { skills } = this.skills;
