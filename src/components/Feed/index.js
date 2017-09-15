@@ -82,164 +82,196 @@ export default class Feed extends Component {
 
     // Transitions
 
-    handleComponentSwitch (component ) {
+    handleComponentSwitch = (component) => {
         this.setState({
             page: component
-        })
+        });
+    };
+
+    handleHomeDisappear = () => {
+        <div ref = { (home) => this.home = home }>
+            <Home avatar = { person.avatar_url } name = { person.name } />
+        </div>;
+
+        TweenMax.fromTo(
+            home,
+            0.7,
+            { x: 0 },
+            { x: -1000 }
+        );
     };
 
     handleSkillsAppear = () => {
-        const { skills } = this.skills;
+        <div ref = { (skills) => this.skills = skills }>
+            <Skills />
+        </div>;
 
         TweenMax.fromTo(
             skills,
-            0.5,
+            0.7,
             { x: -1000 },
             { x: 0 }
         );
     };
 
     handleSkillsDisappear = () => {
-        const { skills } = this.skills;
+        <div ref = { (skills) => this.skills = skills }>
+            <Skills />
+        </div>;
 
         TweenMax.fromTo(
             skills,
-            0.5,
+            0.7,
             { x: 0 },
-            { x: -1000 }
+            { x: 1000 }
         );
     };
 
     handleExperienceAppear = () => {
-        const { expierience } = this.experience;
+        <div ref = { (experience) => this.expierience = experience }>
+            <Skills />
+        </div>;
 
         TweenMax.fromTo(
-            expierience,
-            0.5,
+            experience,
+            0.7,
             { x: -1000 },
             { x: 0 }
         );
     };
 
     handleExperienceDisappear = () => {
-        const { expierience } = this.experience;
+        <div ref = { (experience) => this.expierience = experience }>
+            <Experience />
+        </div>;
 
         TweenMax.fromTo(
             expierience,
-            0.5,
+            0.7,
             { x: 0 },
-            { x: -1000 }
+            { x: 1000 }
         );
     };
 
     handleWorksAppear = () => {
-        const { works } = this.works;
+        <div ref = { (works) => this.works = works }>
+            <Works />
+        </div>;
 
         TweenMax.fromTo(
             works,
-            0.5,
+            0.7,
             { x: -1000 },
             { x: 0 }
         );
     };
 
     handleWorksDisappear = () => {
-        const { works } = this.works;
+        <div ref = { (works) => this.works = works }>
+            <Works />
+        </div>;
 
         TweenMax.fromTo(
             works,
-            0.5,
+            0.7,
             { x: 0 },
-            { x: -1000 }
+            { x: 1000 },
+            { ease: Back.easeOut }
         );
     };
 
     handleContactsAppear = () => {
-        const { contacts } = this.contacts;
+        <div ref = { (contacts) => this.contacts = contacts }>
+            <Contacts />
+        </div>;
 
         TweenMax.fromTo(
             contacts,
-            0.5,
+            0.7,
             { x: -1000 },
             { x: 0 }
         );
     };
 
     handleContactsDisappear = () => {
-        const { contacts } = this.contacts;
+        <div ref = { (contacts) => this.contacts = contacts }>
+            <Contacts />
+        </div>;
 
         TweenMax.fromTo(
             contacts,
-            0.5,
+            0.7,
             { x: 0 },
-            { x: -1000 }
+            { x: 1000 },
+            { ease: Back.easeOut }
         );
     };
 
     render () {
         const { page, person, repos } = this.state;
 
-        const skillsList = page === 'skills' ? (
-            <Transition
-                appear
-                in
-                timeout = { 500 }
-                onEnter = { this.handleSkillsAppear }
-                onExit = { this.handleSkillsDisappear } >
-                <div ref = { (skills) => this.skillsList = skills } >
-                    <Skills />
-                </div>
-            </Transition>
-        ) : null;
+        const skillsList =
+            page === 'skills' ? (
+                <Transition
+                    appear
+                    in
+                    timeout = { 700 }
+                    onEnter = { this.handleSkillsAppear }
+                    onExit = { this.handleSkillsDisappear } >
+                    <div ref = { (skills) => this.skillsList = skills } >
+                        <Skills />
+                    </div>
+                </Transition>
+            ) : null;
 
-        const experienceList = page === 'expierience' ? (
-            <Transition
-                appear
-                in
-                timeout = { 500 }
-                onEnter = { this.handleExperienceAppear }
-                onExit = { this.handleExperienceDisappear } >
-                <div ref = { (experience) => this.experienceList = experience }>
-                    <Experience />
-                </div>
-            </Transition>
-        ) : null;
+        const experienceList =
+            page === 'experience' ? (
+                <Transition
+                    appear
+                    in
+                    timeout = { 700 }
+                    onEnter = { this.handleExperienceAppear }
+                    onExit = { this.handleExperienceDisappear } >
+                    <div ref = { (experience) => this.experienceList = experience }>
+                        <Experience />
+                    </div>
+                </Transition>
+            ) : null;
 
-        const worksList = page === 'works' ? (
-            <Transition
-                appear
-                in
-                timeout = { 500 }
-                onEnter = { this.handleWorksAppear }
-                onExit = { this.handleWorksDisappear } >
-                <div ref = { (works) => this.worksList = works }>
-                    <Works
-                        repos = { repos }
-                    />
-                </div>
-            </Transition>
-        ) : null;
+        const worksList =
+            page === 'works' ? (
+                <Transition
+                    appear
+                    in
+                    timeout = { 700 }
+                    onEnter = { this.handleWorksAppear }
+                    onExit = { this.handleWorksDisappear } >
+                    <div ref = { (works) => this.worksList = works }>
+                        <Works
+                            repos = { repos }
+                        />
+                    </div>
+                </Transition>
+            ) : null;
 
-        const contactsList = page === 'contacts' ? (
-            <Transition
-                appear
-                in
-                timeout = { 500 }
-                onEnter = { this.handleContactsAppear }
-                onExit = { this.handleContactsDisappear } >
-                <div ref = { (contacts) => this.contactsList = contacts }>
-                    <Contacts />
-                </div>
-            </Transition>
-        ) : null;
+        const contactsList =
+            page === 'contacts' ? (
+                <Transition
+                    appear
+                    in
+                    timeout = { 700 }
+                    onEnter = { this.handleContactsAppear }
+                    onExit = { this.handleContactsDisappear } >
+                    <div ref = { (contacts) => this.contactsList = contacts }>
+                        <Contacts />
+                    </div>
+                </Transition>
+            ) : null;
 
         return (
             <section className = { Styles.feed }>
-                <Header />
-                <Home
-                    avatar = { person.avatar_url }
-                    name = { person.name }
-                />
+                <Header handleComponentSwitch = { this.handleComponentSwitch } />
+                <Home avatar = { person.avatar_url } name = { person.name } />
                 { skillsList }
                 { experienceList }
                 { worksList }

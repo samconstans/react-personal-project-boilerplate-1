@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 export default class Home extends Component {
 
-    static PropTypes = {
+    static propTypes = {
         avatar: PropTypes.string.isRequired,
         name:   PropTypes.string.isRequired
     };
