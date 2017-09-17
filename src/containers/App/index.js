@@ -29,7 +29,7 @@ export default class App extends Component {
         twitter:    PropTypes.string.isRequired
     };
 
-    getChildContext () {
+    static getChildContext () {
         return options;
     }
 

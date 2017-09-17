@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import Feed from './';
 import { options } from '../../containers/App';
 
+
 const { apirepo, api, linkedin, twitter } = options;
 
 
