@@ -41,6 +41,13 @@ export default class Header extends Component {
                         </li>
                         <li>
                             <a
+                                href = '#courses'
+                                onClick = { () => this.handleComponentSwitch('courses') }>
+                                Courses
+                            </a>
+                        </li>
+                        <li>
+                            <a
                                 href = '#experience'
                                 onClick = { () => this.handleComponentSwitch('experience') }>
                                 Experience

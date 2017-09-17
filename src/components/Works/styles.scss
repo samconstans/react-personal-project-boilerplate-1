@@ -1,11 +1,11 @@
 @import '../../theme/palette';
 
 .works {
-  height: 100%;
   display: flex;
   flex-direction: column;
   color: $paletteColor6;
   flex-wrap: wrap;
+  overflow: hidden;
 
   h1 {
     width: 50%;
@@ -16,18 +16,19 @@
     color: $paletteColor5;
     text-align: left;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-    padding: 25px 10px 3px 25px;
+    padding: 15px 10px;
     text-transform: capitalize;
     border-bottom: 2px solid $paletteColor5;
-    margin-left: 25px;
+    margin:0 0 0 25px;
   }
 
   .list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    height: 350px;
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     li {
       display: inline-block;

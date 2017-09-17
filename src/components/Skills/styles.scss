@@ -3,7 +3,6 @@
 .skills {
   display: flex;
   flex-direction: column;
-  height: 100%;
   background: $paletteColor2;
   color: $paletteColor6;
   flex-wrap: wrap;
@@ -17,10 +16,10 @@
     color: $paletteColor5;
     text-align: left;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-    padding: 25px 10px 3px 25px;
+    padding: 25px -1px 3px 25px;
     text-transform: capitalize;
     border-bottom: 2px solid $paletteColor5;
-    margin-left: 25px;
+    margin: 0 0 0 25px;
   }
 
   .list {
@@ -28,7 +27,7 @@
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: left;
-    margin-bottom: 25px;
+    height: 350px;
 
     ul {
       display: flex;

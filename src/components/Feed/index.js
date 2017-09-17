@@ -5,6 +5,7 @@ import Header from '../../components/Header';
 import Home from '../../components/Home';
 import Skills from '../../components/Skills';
 import Experience from '../../components/Experience';
+import Courses from '../../components/Courses';
 import Works from '../../components/Works';
 import Contacts from '../../components/Contacts';
 import Footer from '../../components/Footer';
@@ -127,9 +128,35 @@ export default class Feed extends Component {
         );
     };
 
+    handleCoursesAppear = () => {
+        <div ref = { (courses) => this.courses = courses }>
+            <Courses />
+        </div>;
+
+        TweenMax.fromTo(
+            courses,
+            0.7,
+            { x: -1000 },
+            { x: 0 }
+        );
+    };
+
+    handleCoursesDisappear = () => {
+        <div ref = { (courses) => this.courses = courses }>
+            <Courses />
+        </div>;
+
+        TweenMax.fromTo(
+            courses,
+            0.7,
+            { x: 0 },
+            { x: 1000 }
+        );
+    };
+
     handleExperienceAppear = () => {
         <div ref = { (experience) => this.expierience = experience }>
-            <Skills />
+            <Experience />
         </div>;
 
         TweenMax.fromTo(
@@ -224,6 +251,20 @@ export default class Feed extends Component {
                 </Transition>
             ) : null;
 
+        const coursesList =
+            page === 'courses' ? (
+                <Transition
+                    appear
+                    in
+                    timeout = { 700 }
+                    onEnter = { this.handleCoursesAppear }
+                    onExit = { this.handleCoursesDisappear } >
+                    <div ref = { (courses) => this.coursesList = courses }>
+                        <Courses />
+                    </div>
+                </Transition>
+            ) : null;
+
         const experienceList =
             page === 'experience' ? (
                 <Transition
@@ -274,6 +315,7 @@ export default class Feed extends Component {
                 <Home avatar = { person.avatar_url } name = { person.name } />
                 { skillsList }
                 { experienceList }
+                { coursesList }
                 { worksList }
                 { contactsList }
                 <Footer />
