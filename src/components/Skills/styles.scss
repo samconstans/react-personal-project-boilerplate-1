@@ -3,9 +3,14 @@
 .skills {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 46px;
+  left:0;
+  width: 100%;
   background: $paletteColor2;
   color: $paletteColor6;
-  flex-wrap: wrap;
+
 
   h1 {
     width: 50%;
@@ -27,7 +32,7 @@
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: left;
-    height: 350px;
+    height: 420px;
 
     ul {
       display: flex;
@@ -64,6 +69,7 @@
 @media (min-width: 480px) and (max-width: 767px) {
   .skills {
     min-width: 480px;
+    height: 80%;
 
     h1 {
       font-size: 25px;

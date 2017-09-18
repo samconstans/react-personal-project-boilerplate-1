@@ -3,8 +3,13 @@
 .works {
   display: flex;
   flex-direction: column;
-  color: $paletteColor6;
   flex-wrap: wrap;
+  position: absolute;
+  top: 46px;
+  left:0;
+  width: 100%;
+  background: $paletteColor7;
+  color: $paletteColor6;
   overflow: hidden;
 
   h1 {

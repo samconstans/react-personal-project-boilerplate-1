@@ -4,6 +4,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  position: absolute;
+  bottom: 133px;
+  left:0;
+  width: 100%;
   background: $paletteColor2;
   font-family: 'roboto medium', Helvetica;
 
