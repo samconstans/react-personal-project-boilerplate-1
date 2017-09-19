@@ -89,23 +89,8 @@ export default class Feed extends Component {
         });
     };
 
-    handleHomeDisappear = () => {
-        <div ref = { (home) => this.home = home }>
-            <Home avatar = { person.avatar_url } name = { person.name } />
-        </div>;
-
-        TweenMax.fromTo(
-            home,
-            0.7,
-            { x: 0 },
-            { x: -1000 }
-        );
-    };
-
     handleSkillsAppear = () => {
-        <div ref = { (skills) => this.skills = skills }>
-            <Skills />
-        </div>;
+        const { skillsList: skills } = this;
 
         TweenMax.fromTo(
             skills,
@@ -116,9 +101,7 @@ export default class Feed extends Component {
     };
 
     handleSkillsDisappear = () => {
-        <div ref = { (skills) => this.skills = skills }>
-            <Skills />
-        </div>;
+        const { skillsList: skills } = this;
 
         TweenMax.fromTo(
             skills,
@@ -129,9 +112,7 @@ export default class Feed extends Component {
     };
 
     handleCoursesAppear = () => {
-        <div ref = { (courses) => this.courses = courses }>
-            <Courses />
-        </div>;
+        const { coursesList: courses } = this;
 
         TweenMax.fromTo(
             courses,
@@ -142,9 +123,7 @@ export default class Feed extends Component {
     };
 
     handleCoursesDisappear = () => {
-        <div ref = { (courses) => this.courses = courses }>
-            <Courses />
-        </div>;
+        const { coursesList: courses } = this;
 
         TweenMax.fromTo(
             courses,
@@ -155,9 +134,7 @@ export default class Feed extends Component {
     };
 
     handleExperienceAppear = () => {
-        <div ref = { (experience) => this.expierience = experience }>
-            <Experience />
-        </div>;
+        const { experienceList: experience } = this;
 
         TweenMax.fromTo(
             experience,
@@ -168,12 +145,10 @@ export default class Feed extends Component {
     };
 
     handleExperienceDisappear = () => {
-        <div ref = { (experience) => this.expierience = experience }>
-            <Experience />
-        </div>;
+        const { experienceList: experience } = this;
 
         TweenMax.fromTo(
-            expierience,
+            experience,
             0.7,
             { x: 0 },
             { x: 1000 }
@@ -181,9 +156,7 @@ export default class Feed extends Component {
     };
 
     handleWorksAppear = () => {
-        <div ref = { (works) => this.works = works }>
-            <Works />
-        </div>;
+        const { worksList: works } = this;
 
         TweenMax.fromTo(
             works,
@@ -194,9 +167,7 @@ export default class Feed extends Component {
     };
 
     handleWorksDisappear = () => {
-        <div ref = { (works) => this.works = works }>
-            <Works />
-        </div>;
+        const { worksList: works } = this;
 
         TweenMax.fromTo(
             works,
@@ -208,9 +179,7 @@ export default class Feed extends Component {
     };
 
     handleContactsAppear = () => {
-        <div ref = { (contacts) => this.contacts = contacts }>
-            <Contacts />
-        </div>;
+        const { contactsList: contacts } = this;
 
         TweenMax.fromTo(
             contacts,
@@ -221,16 +190,13 @@ export default class Feed extends Component {
     };
 
     handleContactsDisappear = () => {
-        <div ref = { (contacts) => this.contacts = contacts }>
-            <Contacts />
-        </div>;
+        const { contactsList: contacts } = this;
 
         TweenMax.fromTo(
             contacts,
             0.7,
             { x: 0 },
-            { x: 1000 },
-            { ease: Back.easeOut }
+            { x: 1000 }
         );
     };
 
@@ -259,7 +225,7 @@ export default class Feed extends Component {
                     timeout = { 700 }
                     onEnter = { this.handleCoursesAppear }
                     onExit = { this.handleCoursesDisappear } >
-                    <div ref = { (courses) => this.coursesList = courses }>
+                    <div ref = { (courses) => this.coursesList = courses } >
                         <Courses />
                     </div>
                 </Transition>

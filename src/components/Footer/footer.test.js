@@ -1,12 +1,11 @@
 import React from 'react';
-import dom from 'react-test-renderer';
+import { shallow } from 'enzyme';
 import Footer from './';
 import { options } from '../../containers/App';
 
 const { apirepo, api, linkedin, twitter } = options;
 
-
-const result = dom.create(<Footer />,
+const result = shallow(<Footer />,
     {
         context: {
             api,
@@ -15,9 +14,9 @@ const result = dom.create(<Footer />,
             twitter
         }
     }
-).toJSON();
+);
 
-test('Footer component', () =>
-    {expect(result).toMatchSnapshot()
+test('Footer component', () => {
+    expect(result.find('section').length).toBe(1)
 });
 
