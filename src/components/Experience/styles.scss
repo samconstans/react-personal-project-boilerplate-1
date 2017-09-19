@@ -71,6 +71,31 @@
 @media (min-width: 768px) and (max-width: 959px) {
   .experience {
     min-width: 768px;
+    top: -308px;
+
+    h1 {
+      width:34%;
+      font-size: 40px;
+      padding: 5px 10px 3px 0px;
+    }
+
+    .list {
+      height: 252px;
+      margin: 0;
+
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          font-size: 13px;
+
+          &:first-child {
+            width: 37%;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -78,21 +103,19 @@
 @media (min-width: 480px) and (max-width: 767px) {
   .experience {
     min-width: 480px;
+    top: -291px;
+    overflow: scroll;
 
     h1 {
+      width: 24%;
       font-size: 25px;
       padding: 0 10px 3px 0;
-      text-transform: capitalize;
-      border-bottom: 2px solid #1A9696;
-      margin-left: 35px;
+      margin-left: 25px;
     }
 
     .list {
-       display: flex;
-       flex-wrap: nowrap;
-       flex-direction: column;
-       text-align: left;
-       margin: 0;
+      height: 258px;
+      margin: 0;
 
       ul {
          display: flex;
@@ -100,12 +123,12 @@
          margin: 0;
 
          li {
-           font-size: 18px;
+           font-size: 13px;
 
 
            &:first-child {
-             text-align: left;
              width: 90%;
+             font-weight: bold;
            }
 
            &:last-child {
@@ -117,8 +140,8 @@
              flex-direction: column;
 
              li {
-               text-align: left;
                width: 95%;
+               font-weight: normal;
              }
            }
          }
@@ -130,33 +153,37 @@
 @media (min-width: 320px) and (max-width: 479px) {
   .experience {
     min-width: 480px;
+    top: -237px;
 
     h1 {
-      font-size: 25px;
+      font-size: 20px;
+      padding: 5px 0px 1px 0px;
     }
 
     .list {
       display: flex;
       flex-wrap: nowrap;
       flex-direction: column;
-      text-align: left;
+      height: 435px;
       margin-bottom: 0;
 
       ul {
         display: flex;
         flex-direction: column;
+        padding-left: 13px;
 
         li {
-          font-size: 18px;
+          font-size: 10px;
 
 
           &:first-child {
             text-align: left;
             width: 90%;
+            font-weight: bold;
           }
 
           &:last-child {
-            width: 90%;
+            width: 65%;
           }
 
           .listOil {
@@ -165,7 +192,7 @@
 
             li {
               text-align: left;
-              width: 95%;
+              width: 90%;
             }
           }
         }

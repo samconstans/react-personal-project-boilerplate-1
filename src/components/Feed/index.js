@@ -173,8 +173,7 @@ export default class Feed extends Component {
             works,
             0.7,
             { x: 0 },
-            { x: 1000 },
-            { ease: Back.easeOut }
+            { x: 1000 }
         );
     };
 

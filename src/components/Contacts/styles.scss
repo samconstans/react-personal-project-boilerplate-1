@@ -8,7 +8,7 @@
   bottom: 0px;
   left:0;
   width: 100%;
-  background: $paletteColor2;
+  background: $paletteColor7;
   font-family: 'roboto medium', Helvetica;
 
   a {
@@ -31,6 +31,27 @@
       -moz-box-shadow: 3px 3px 5px 0px rgba(79,90,110,1);
       box-shadow: 3px 3px 5px 0px rgba(79,90,110,1);
       transition-duration: .2s;
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .contacts {
+    a {
+      width: 250px;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    height: 100%px;
+
+    a {
+      margin: 15px auto;
+      padding-top: 15px;
     }
   }
 }

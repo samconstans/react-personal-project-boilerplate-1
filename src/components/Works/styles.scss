@@ -65,29 +65,49 @@
 @media (min-width: 768px) and (max-width: 959px) {
   .works {
     min-width: 768px;
+    top: -308px;
+
+    h1 {
+      width:34%;
+      font-size: 40px;
+      padding: 5px 10px 3px 0px;
+    }
+
+    .list {
+      height: 252px;
+      margin: 0;
+
+      li {
+        font-size: 13px;
+      }
+    }
   }
 }
+
 
 
 @media (min-width: 480px) and (max-width: 767px) {
   .works {
     min-width: 480px;
-    margin-bottom: 5px;
+    top: -291px;
+    overflow: hidden;
 
     h1 {
       font-size: 25px;
       padding: 3px;
-      margin: 5px 0 0 35px;
+      margin: 5px 0 0 25px;
     }
 
     .list {
       display: flex;
       flex-direction: column;
-      margin-bottom: -60px;
-
+      height: 243px;
+      margin: 3px 0;
+      padding-left: 25px;
 
       li {
-        width: 90%;
+        width: 30%;
+        font-size: 13px;
       }
     }
   }
@@ -97,9 +117,11 @@
   .works {
     min-width: 480px;
     margin-top: 0;
+    top: -237px;
+    flex-wrap: nowrap;
 
     h1 {
-      font-size: 25px;
+      font-size: 20px;
       padding: 3px;
       margin-left: 25px;
     }
@@ -107,11 +129,12 @@
     .list {
       display: flex;
       flex-direction: column;
+      height: 450px;
       margin-bottom: 2px;
-
 
       li {
         width: 95%;
+        font-size: 10px;
       }
     }
   }

@@ -20,7 +20,7 @@ export default class Home extends Component {
 
             <section className = { Styles.home } id = 'home' >
                 <img src = { avatar } />
-                <div>
+                <div className = { Styles.blockText } >
                     <h1>Hi, I am <span>{ name }</span> </h1>
                     <h2>I am a frontend developer. Feel free to contact me if you want to make me an offer.</h2>
                 </div>
